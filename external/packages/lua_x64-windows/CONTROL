@@ -1,0 +1,7 @@
+Package: lua
+Version: 5.4.7
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: be7bb9ddf9215535b7991fa36d67ac9c077d3c0651257235ba58b8c5541bf476
+Description: A powerful, fast, lightweight, embeddable scripting language
