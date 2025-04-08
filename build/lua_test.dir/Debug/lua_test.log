@@ -1,5 +1,1 @@
-﻿  Building Custom Rule D:/0_code/9_cursor_test/lua_test/CMakeLists.txt
-  main.cpp
-D:\0_code\9_cursor_test\lua_test\src\main.cpp(15,11): warning C4244: “初始化”: 从“lua_Integer”转换到“int”，可能丢失数据
-D:\0_code\9_cursor_test\lua_test\src\main.cpp(16,11): warning C4244: “初始化”: 从“lua_Integer”转换到“int”，可能丢失数据
-  lua_test.vcxproj -> D:\0_code\9_cursor_test\lua_test\build\Debug\lua_test.exe
+﻿LINK : fatal error LNK1104: 无法打开文件“python311_d.lib”

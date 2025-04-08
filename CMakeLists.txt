@@ -4,9 +4,12 @@ project(lua_test LANGUAGES CXX)
 add_compile_options("/utf-8")
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_PREFIX_PATH "${CMAKE_SOURCE_DIR}/external/packages")
+
 set(LUA_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/external/packages/lua_x64-windows/include")
 set(LUA_LIBRARIES "${CMAKE_SOURCE_DIR}/external/packages/lua_x64-windows/lib/lua.lib")
 
+find_package(Python3 COMPONENTS Development REQUIRED)
 # 收集所有源文件
 file(GLOB_RECURSE SOURCE_FILES 
     "${CMAKE_SOURCE_DIR}/src/*.cpp"
@@ -29,7 +32,9 @@ target_include_directories(${CMAKE_PROJECT_NAME}
 )
 
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE ${LUA_INCLUDE_DIR})
-target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE ${LUA_LIBRARIES})# 添加可执行文件
+message(PYTHON_LIBRARIES ${PYTHON_LIBRARIES})
+
+target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE ${LUA_LIBRARIES} Python3::Python)# 添加可执行文件
 add_custom_command(TARGET ${CMAKE_PROJECT_NAME} POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_if_different
         "${CMAKE_SOURCE_DIR}/external/packages/lua_x64-windows/bin/lua.dll"

@@ -191,6 +191,18 @@ LUA_INCLUDE_DIR:PATH=LUA_INCLUDE_DIR-NOTFOUND
 //Path to a library.
 LUA_LIBRARY:FILEPATH=LUA_LIBRARY-NOTFOUND
 
+//Path to a library.
+PYTHON_DEBUG_LIBRARY:FILEPATH=PYTHON_DEBUG_LIBRARY-NOTFOUND
+
+//Path to a file.
+PYTHON_INCLUDE_DIR:PATH=D:/Anaconda/include
+
+//Path to a library.
+PYTHON_LIBRARY:FILEPATH=D:/Anaconda/libs/python39.lib
+
+//Path to a library.
+PYTHON_LIBRARY_DEBUG:FILEPATH=PYTHON_LIBRARY_DEBUG-NOTFOUND
+
 //Value Computed by CMake
 lua_test_BINARY_DIR:STATIC=D:/0_code/9_cursor_test/lua_test/build
 
@@ -333,8 +345,40 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding Lua
 FIND_PACKAGE_MESSAGE_DETAILS_Lua:INTERNAL=[D:/0_code/9_cursor_test/lua_test/external/packages/lua_x64-windows/lib/lua.lib][D:/0_code/9_cursor_test/lua_test/external/packages/lua_x64-windows/include][v5.4.7()]
+//Details about finding Python3
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[D:/0_code/9_cursor_test/lua_test/external/packages/python3_x64-windows/lib/python311.lib][D:/0_code/9_cursor_test/lua_test/external/packages/python3_x64-windows/include/python3.11][cfound components: Development Development.Module Development.Embed ][v3.11.11()]
+//Details about finding PythonLibs
+FIND_PACKAGE_MESSAGE_DETAILS_PythonLibs:INTERNAL=[D:/Anaconda/libs/python39.lib][D:/Anaconda/include][v3.9.7()]
 //ADVANCED property for variable: LUA_INCLUDE_DIR
 LUA_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: LUA_LIBRARY
 LUA_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PYTHON_DEBUG_LIBRARY
+PYTHON_DEBUG_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PYTHON_INCLUDE_DIR
+PYTHON_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PYTHON_LIBRARY
+PYTHON_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PYTHON_LIBRARY_DEBUG
+PYTHON_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//Path to a program.
+_Python3_CONFIG:INTERNAL=_Python3_CONFIG-NOTFOUND
+//Compiler reason failure
+_Python3_Compiler_REASON_FAILURE:INTERNAL=
+_Python3_DEVELOPMENT_EMBED_SIGNATURE:INTERNAL=611b64955541f2b606cddd7c6faea88a
+_Python3_DEVELOPMENT_MODULE_SIGNATURE:INTERNAL=611b64955541f2b606cddd7c6faea88a
+//Development reason failure
+_Python3_Development_REASON_FAILURE:INTERNAL=
+//Path to a file.
+_Python3_INCLUDE_DIR:INTERNAL=D:/0_code/9_cursor_test/lua_test/external/packages/python3_x64-windows/include/python3.11
+//Interpreter reason failure
+_Python3_Interpreter_REASON_FAILURE:INTERNAL=
+//Path to a library.
+_Python3_LIBRARY_DEBUG:INTERNAL=_Python3_LIBRARY_DEBUG-NOTFOUND
+//Path to a library.
+_Python3_LIBRARY_RELEASE:INTERNAL=D:/0_code/9_cursor_test/lua_test/external/packages/python3_x64-windows/lib/python311.lib
+//NumPy reason failure
+_Python3_NumPy_REASON_FAILURE:INTERNAL=
+//Path to a library.
+_Python3_RUNTIME_LIBRARY_RELEASE:INTERNAL=D:/0_code/9_cursor_test/lua_test/external/packages/python3_x64-windows/bin/python311.dll
 

@@ -2,6 +2,8 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include "Python.h"
+
 
 
 // 定义一个 C++ 函数，供 Lua 脚本调用
@@ -26,8 +28,27 @@ int call_cpp_function(lua_State* L) {
     return 1;
 }
 
+int call_py_function_test() {
+
+    Py_Initialize();
+
+    // 执行 Python 脚本
+    PyRun_SimpleString("import sys");
+    PyRun_SimpleString("sys.path.append('./')");
+    PyRun_SimpleString("import script");
+    PyRun_SimpleString("script.main()");
+
+    // 关闭 Python 解释器
+    Py_Finalize();
+    return 0;
+
+}
 
 int main() {
+
+    call_py_function_test();
+    return 0;
+
     std::setlocale(LC_ALL, "zh_CN.UTF-8"); // 设置终端为 UTF-8
 
     // 初始化 Lua 环境
